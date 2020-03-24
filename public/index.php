@@ -11,6 +11,12 @@ if (file_exists($installFile)) {
     $install = null;
 }
 
+/**
+ * Skip the GUI installation because in Heroku we are not using `.env`, but config vars.
+ * Follow installation commands manually: https://devdocs.bagisto.com/index.html#installation
+ */
+$install = null;
+
 if (! is_null($install)) {
 
     header("Location: $install");
