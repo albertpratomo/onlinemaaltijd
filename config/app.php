@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Bagisto'),
+    'name' => env('APP_NAME', 'OnlineMaaltijd'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE','Asia/Kolkata'),
+    'timezone' => env('APP_TIMEZONE', 'Europe/Amsterdam'),
 
     /*
     |--------------------------------------------------------------------------
@@ -117,7 +117,7 @@ return [
     |
     */
 
-    'currency' => env('APP_CURRENCY','USD'),
+    'currency' => env('APP_CURRENCY','EUR'),
 
     /*
     |--------------------------------------------------------------------------
