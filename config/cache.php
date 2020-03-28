@@ -1,5 +1,7 @@
 <?php
 
+$redisUrl = parse_url(env('REDIS_URL'));
+
 return [
 
     /*
@@ -27,8 +29,6 @@ return [
     | same cache driver to group types of items stored in your caches.
     |
     */
-
-    $redisUrl = parse_url(env('REDIS_URL'));
 
     'stores' => [
 
