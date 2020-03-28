@@ -1,5 +1,8 @@
 <?php
 
+var_dump(__DIR__);
+die;
+
 $location = str_replace('\\', '/', getcwd());
 $currentLocation = explode("/", $location);
 $desiredLocation = implode("/", $currentLocation);
