@@ -28,6 +28,8 @@ return [
     |
     */
 
+    $redisUrl = parse_url(env('REDIS_URL'));
+
     'stores' => [
 
         'apc' => [
@@ -91,9 +93,9 @@ return [
             'clusters' => [
                 'default' => [
                     [
-                        'host' => env('REDIS_HOST', 'localhost'),
-                        'password' => env('REDIS_PASSWORD', null),
-                        'port' => env('REDIS_PORT', 6379),
+                        'host' => $redisUrl['host'],
+                        'password' => $redisUrl['pass'],
+                        'port' => $redisUrl['port'],
                         'database' => 0,
                     ],
                 ],
