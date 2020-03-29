@@ -132,8 +132,8 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan cache:clear",
             "@php artisan config:clear",
+            "@php artisan cache:clear",
             "@php artisan package:discover",
             "@php artisan route:cache",
             "@php artisan view:cache",
