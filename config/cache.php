@@ -1,7 +1,5 @@
 <?php
 
-$redisUrl = parse_url(env('REDIS_URL'));
-
 return [
 
     /*
@@ -87,20 +85,8 @@ return [
         ],
 
         'redis' => [
-
-            'client' => 'predis',
-
-            'clusters' => [
-                'default' => [
-                    [
-                        'host' => $redisUrl['host'],
-                        'password' => $redisUrl['pass'],
-                        'port' => $redisUrl['port'],
-                        'database' => 0,
-                    ],
-                ],
-            ],
-
+            'driver' => 'redis',
+            'connection' => 'cache',
         ],
 
     ],
